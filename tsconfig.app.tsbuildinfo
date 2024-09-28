@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/components/autodismissalert.tsx","./src/components/topvoicebadge.tsx","./src/components/topvoicebadgelist.tsx","./src/components/topvoiceinputform.tsx","./src/components/topvoicestatus.tsx","./src/types/topvoice.ts"],"version":"5.6.2"}

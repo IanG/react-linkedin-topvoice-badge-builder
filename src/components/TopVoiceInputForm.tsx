@@ -101,7 +101,7 @@ export default function TopVoiceInputForm({topVoices, onNewTopVoice}: TopVoiceIn
                         onClick={() => handleSelect(TopVoiceType.Gold)}
                         style={getItemStyle(TopVoiceType.Gold)}
                     >
-                        <img className="icon" src={`/svg/badges/gold.svg`} alt="gold" width={18} height={18}/>
+                        <img className="icon" src={`./svg/badges/gold.svg`} alt="gold" width={18} height={18}/>
                         &nbsp;Gold level top voice badge
                     </ListGroup.Item>
 
@@ -110,7 +110,7 @@ export default function TopVoiceInputForm({topVoices, onNewTopVoice}: TopVoiceIn
                         onClick={() => handleSelect(TopVoiceType.Blue)}
                         style={getItemStyle(TopVoiceType.Blue)}
                     >
-                        <img className="icon" src={`/svg/badges/blue.svg`} alt="blue" width={18} height={18}/>
+                        <img className="icon" src={`./svg/badges/blue.svg`} alt="blue" width={18} height={18}/>
                         &nbsp;LinkedIn blue level top voice badge
                     </ListGroup.Item>
                     <ListGroup.Item
@@ -118,7 +118,7 @@ export default function TopVoiceInputForm({topVoices, onNewTopVoice}: TopVoiceIn
                         onClick={() => handleSelect(TopVoiceType.Unicorn)}
                         style={getItemStyle(TopVoiceType.Unicorn)}
                     >
-                        <img className="icon" src={`/svg/badges/unicorn.svg`} alt="unicorn" width={22} height={22}/>
+                        <img className="icon" src={`./svg/badges/unicorn.svg`} alt="unicorn" width={22} height={22}/>
                         &nbsp;Unicorn level badge
                     </ListGroup.Item>
                 </ListGroup>

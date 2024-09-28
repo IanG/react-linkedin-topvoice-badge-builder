@@ -18,20 +18,20 @@ export default function App() {
 
         if(newTopVoice.type == TopVoiceType.Unicorn)
         {
-            const hornAudio = new Audio("/audio/airhorn.mp3");
+            const hornAudio = new Audio("./audio/airhorn.mp3");
             void hornAudio.play();
             launchConfetti();
         }
 
         if(newTopVoice.type == TopVoiceType.Blue)
         {
-            const applauseAudio = new Audio("/audio/applause.mp3");
+            const applauseAudio = new Audio("./audio/applause.mp3");
             void applauseAudio.play();
         }
 
         if(topVoices.length == badgesToWowAt)
         {
-            const audio = new Audio("/audio/wow.mp3");
+            const audio = new Audio("./audio/wow.mp3");
             void audio.play();
         }
 
