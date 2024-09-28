@@ -18,7 +18,7 @@ export default function App() {
 
         if(newTopVoice.type == TopVoiceType.Unicorn)
         {
-            const hornAudio = new Audio("./audio/airhorn.mp3");
+            const hornAudio = new Audio("./audio/big-applause.mp3");
             void hornAudio.play();
             launchConfetti();
         }
