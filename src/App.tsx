@@ -1,10 +1,13 @@
 import {useState} from 'react'
+import confetti from 'canvas-confetti';
+
 import TopVoiceBadgeList from "./components/TopVoiceBadgeList.tsx";
 import TopVoiceInputForm from "./components/TopVoiceInputForm.tsx";
+import TopVoiceStatus from "./components/TopVoiceStatus.tsx";
+
+import {TopVoice, TopVoiceType} from "./types/topvoice.ts";
 
 import './App.css'
-import {TopVoice, TopVoiceType} from "./types/topvoice.ts";
-import TopVoiceStatus from "./components/TopVoiceStatus.tsx";
 
 export default function App() {
     const [topVoices, setTopVoices] = useState<TopVoice[]>([]);
@@ -17,6 +20,7 @@ export default function App() {
         {
             const hornAudio = new Audio("/audio/airhorn.mp3");
             void hornAudio.play();
+            launchConfetti();
         }
 
         if(newTopVoice.type == TopVoiceType.Blue)
@@ -39,6 +43,14 @@ export default function App() {
             ...currentTopVoices.slice(0, index),
             ...currentTopVoices.slice(index + 1),
         ]);
+    }
+
+    function launchConfetti() {
+        confetti({
+            particleCount: 200,
+            spread: 100,
+            origin: { y: 0.6 },
+        });
     }
 
     return (
