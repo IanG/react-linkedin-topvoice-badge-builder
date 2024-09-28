@@ -1,17 +1,27 @@
 .top-voice {
-    background: rgb(252, 227, 188);
-    color: rgb(145, 89, 7);
     font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Fira Sans, Ubuntu, Oxygen, Oxygen Sans, Cantarell, Droid Sans, Apple Color Emoji, Segoe UI Emoji, Segoe UI Emoji, Segoe UI Symbol, Lucida Grande, Helvetica, Arial, sans-serif;
     font-size: 12px;
     font-weight: 600;
     line-height: 15px;
     vertical-align: middle;
     border-radius: 25px;
-    padding-bottom: 4px;
-    padding-top: 4px;
-    padding-right: 8px;
-    padding-left: 8px;
+    padding: 4px 8px;
     display: inline-block;
+}
+
+.top-voice.gold {
+    background: rgb(252, 227, 188);
+    color: rgb(145, 89, 7);
+}
+
+.top-voice.blue {
+    background: rgb(221, 231, 241);
+    color: rgb(10, 102, 194);
+}
+
+.top-voice.unicorn {
+    background: rgb(234, 206, 223);
+    color: rgb(126, 0, 199);
 }
 
 .top-voice .caption {
@@ -21,6 +31,6 @@
     vertical-align: middle;
 }
 
-.top-voice .lightbulb {
-    vertical-align: middle;
-}
+/*.top-voice .icon {*/
+/*    vertical-align: middle;*/
+/*}*/
