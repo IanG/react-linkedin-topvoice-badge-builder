@@ -111,7 +111,7 @@ export default function TopVoiceInputForm({topVoices, onNewTopVoice}: TopVoiceIn
                         style={getItemStyle(TopVoiceType.Blue)}
                     >
                         <img className="icon" src={`./svg/badges/blue.svg`} alt="blue" width={18} height={18}/>
-                        &nbsp;LinkedIn blue level top voice badge
+                        &nbsp;Blue level top voice badge
                     </ListGroup.Item>
                     <ListGroup.Item
                         as="li"
@@ -119,7 +119,7 @@ export default function TopVoiceInputForm({topVoices, onNewTopVoice}: TopVoiceIn
                         style={getItemStyle(TopVoiceType.Unicorn)}
                     >
                         <img className="icon" src={`./svg/badges/unicorn.svg`} alt="unicorn" width={22} height={22}/>
-                        &nbsp;Unicorn level badge
+                        &nbsp;Unicorn level top voice badge
                     </ListGroup.Item>
                 </ListGroup>
             </div>

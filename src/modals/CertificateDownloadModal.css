@@ -1,0 +1,15 @@
+div .top-voice-certificate
+{
+    background: linear-gradient(90deg,
+    #d7d7d7,
+    #f0f0f0 25%,
+    #c1c1c1 50%,
+    #f0f0f0 75%,
+    #d7d7d7);
+    background-size: 200% 100%;
+
+    border: 1px solid #dee2e6;
+    border-radius: 25px;
+    padding: 15px;
+}
+

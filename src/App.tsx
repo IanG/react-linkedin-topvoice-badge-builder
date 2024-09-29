@@ -8,6 +8,7 @@ import TopVoiceStatus from "./components/TopVoiceStatus.tsx";
 import {TopVoice, TopVoiceType} from "./types/topvoice.ts";
 
 import './App.css'
+import TopVoiceCertificateDownload from "./components/TopVoiceCertificateDownload.tsx";
 
 export default function App() {
     const [topVoices, setTopVoices] = useState<TopVoice[]>([]);
@@ -57,10 +58,10 @@ export default function App() {
         <>
             <div className={"heading"} style={{width: "50%", margin: "auto", textAlign: "left"}}>
                 <center>
-                <h1>
-                    <i className="bi bi-linkedin text-primary"></i>&nbsp;
-                    <span>Top Voice Badge Builder</span>
-                </h1>
+                    <h1>
+                        <i className="bi bi-linkedin text-primary"></i>&nbsp;
+                        <span>Top Voice Badge Builder</span>
+                    </h1>
                 </center>
 
                 <p>Do you have FOMO ? Are you not being recognised for the awesome skills you have ? Tired of
@@ -80,6 +81,14 @@ export default function App() {
 
             <div style={{width: "50%", margin: "auto", marginTop: "20px"}}>
                 <TopVoiceStatus topVoices={topVoices}/>
+            </div>
+
+            <div style={{width: "50%", margin: "auto", marginTop: "20px"}}>
+                <TopVoiceCertificateDownload topVoices={topVoices}/>
+            </div>
+
+            <div style={{width: "50%", margin: "auto",  marginTop: "20px", textAlign: "left"}}>
+                <p><i className="bi bi-exclamation-circle"></i>&nbsp;If you enjoyed using this little application maybe you can come check out my LinkedIn profile <a href={"https://www.linkedin.com/in/ian-gratton/"} target={"_blank"}>here</a>.</p>
             </div>
         </>
     )
